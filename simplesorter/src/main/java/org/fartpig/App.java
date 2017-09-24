@@ -9,6 +9,7 @@ import org.fartpig.sorter.InsertionSorter;
 import org.fartpig.sorter.MergeSorter;
 import org.fartpig.sorter.QuickSorter;
 import org.fartpig.sorter.SelectionSorter;
+import org.fartpig.sorter.ShellSorter;
 import org.fartpig.sorter.Sorter;
 
 public class App {
@@ -61,7 +62,12 @@ public class App {
 		System.out.println("count:");
 		outputArray(tempData);
 		
-		
+		tempData = Arrays.copyOf(data, data.length);
+		Sorter shellSorter = new ShellSorter();
+		shellSorter.sort(tempData);
+		System.out.println("shell:");
+		outputArray(tempData);
+
 
 	}
 

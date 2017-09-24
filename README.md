@@ -9,6 +9,7 @@ insertion
 merge
 quick
 selection
+shell
 ..
 
 this list will be added for more sort method.
